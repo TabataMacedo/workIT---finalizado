@@ -1,0 +1,224 @@
+@font-face {
+    font-family: "Fraunces";
+    src: url("../assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+}
+@font-face {
+    font-family: "Manrope";
+    src: url("../assets/fonts/manrope/Manrope-VariableFont_wght.ttf");
+}
+
+header {
+    background-color: var(--darkPurple);
+    padding: 0;
+    width: 100%;
+    height: 730px;
+    border-radius: 10% 10% 52% 52% / 0% 0% 5% 5%;
+    position: relative;
+}
+
+.container-acess {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.4% 0 0;
+    align-items: center;
+    margin: 0 3%;
+}
+
+.container-acess p {
+    color: white;
+    width: 140px;
+    height: 35px;
+    border-bottom: 3px solid var(--verdeAgua);
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-style: bold;
+    line-height: 32px;
+    letter-spacing: 1.1px;   
+}
+.container-acess a{
+    text-decoration: none;
+}
+
+.container-acess p:active {
+    color: var(--verdeAgua);
+}
+
+.container-learn-more {
+    height: 160;
+    margin: 135px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+    position: relative;
+    width: 100%;
+}
+
+.container-learn-more h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    /* border: 2px solid red; */
+    width: 44.376%;
+}
+
+.container-learn-more__line {
+    border-bottom: 4px solid var(--verdeAgua);
+    position: absolute;
+    bottom: 69%;
+    left: 45%;
+    width: 16.4%;
+    height: 3px;
+}
+
+.container-learn-more__button {
+    text-decoration: none;
+    color: var(--darkPurple);
+    background-color: var(--verdeAgua);
+    padding: 20px;
+    margin: 37px 0 0 0;
+    width: 161px;
+    height: 61px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-learn-more__button:active {
+    background-color: var(--darkPurple);
+    border: solid var(--verdeAgua);
+    color: var(--verdeAgua);
+}
+.container-telemovel{
+    width: 52.848%;
+    height: 440px;
+    margin-top: 61px;
+    margin-left: 25.07%;
+    margin-right: 21.6%;
+}
+.container-telemovel img{
+    width: 100%;
+    height: 98%;
+    z-index: 1000;
+    max-width: 100%;
+}
+.container-logo__left{
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 10%;
+  left: -10%;
+}
+.container-logo__right{
+    position: absolute;
+    right: -5%;
+    bottom: 40%;
+    z-index: 100;
+}
+/* Para tablets */
+@media (max-width: 768px) {
+    header {
+        height: 600px;
+        border-radius: 10% 10% 25% 25% / 0% 0% 5% 5%;
+    }
+
+    .container-acess {
+        margin: 0 2%;
+        padding: 2% 0 0;
+    }
+
+    .container-learn-more {
+        height: 130px;
+        margin: 110px auto 0;
+    }
+
+    .container-learn-more h1 {
+        font-size: 60px;
+        line-height: 60px;
+        width: 70%;
+    }
+
+    .container-learn-more__line {
+        bottom: 55%;
+        left: 42%;
+        width: 27%;
+    }
+
+    .container-learn-more__button {
+        padding: 15px;
+        width: 140px;
+        height: 50px;
+    }
+
+    .container-telemovel {
+        width: 70%;
+        height: 350px;
+        margin-top: 100px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .container-logo__left{
+        position: absolute;
+        left: -30%;
+    }
+}
+
+/* Para celulares */
+@media (max-width: 480px) {
+    header {
+        height: 400px;
+        border-radius: 10% 10% 25% 25% / 0% 0% 5% 5%;
+    }
+
+ /* Tirar o container acess com o Luís */
+
+    .container-learn-more {
+        height: 100px;
+        margin: 90px auto 0;
+    }
+
+    .container-learn-more h1 {
+        font-size: 40px;
+        line-height: 40px;
+        width: 90%;
+    }
+
+    .container-learn-more__line {
+        bottom: 60%;
+        left: 41%;
+        width: 29%;
+    }
+
+    .container-learn-more__button {
+        padding: 10px;
+        width: 120px;
+        height: 40px;
+    }
+
+    .container-telemovel {
+        width: 90%;
+        height: 300px;
+        margin-top: 80px;
+        margin-left: 6%;
+        margin-right: 5%;
+    }
+    .container-logo__left{
+        visibility: hidden;
+    }
+    .container-logo__right{
+        visibility: hidden;
+    }
+}
+
+
+
+
